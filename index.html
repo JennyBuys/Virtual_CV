@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jenny Buys | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset & base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0; 
+      font-family: 'Inter', sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      scroll-behavior: smooth;
+      line-height: 1.6;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background-color: #161b22;
+      border-bottom: 1px solid #30363d;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+      height: 60px;
+      align-items: center;
+      font-weight: 600;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      margin: 0; padding: 0;
+    }
+    nav li {
+      font-size: 1rem;
+    }
+    nav a {
+      padding: 10px 5px;
+      transition: color 0.3s;
+    }
+    nav a.active {
+      color: #58a6ff;
+      border-bottom: 2px solid #58a6ff;
+      padding-bottom: 8px;
+    }
+
+    /* Container */
+    main {
+      max-width: 900px;
+      margin: 80px auto 40px; /* leave space for fixed nav */
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.2rem;
+      color: #58a6ff;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 6px;
+      color: #8b949e;
+      font-weight: 600;
+    }
+
+    /* Section styling */
+    section {
+      margin-bottom: 50px;
+    }
+
+    /* Contact info line */
+    .contact {
+      font-size: 1rem;
+      color: #8b949e;
+      margin-bottom: 30px;
+    }
+    .contact span {
+      margin-right: 15px;
+      white-space: nowrap;
+    }
+
+    /* Buttons */
+    .btn-group {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      background-color: #2384e8;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      user-select: none;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .btn:hover,
+    .btn:focus {
+      background-color: #0f64c1;
+      outline: none;
+    }
+
+    /* Lists */
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      .btn-group {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about" class="active">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="about">
+    <img src="https://github.com/JennyBuys.png" alt="Jenny Buys" style="width:140px;height:140px;border-radius:50%;border:3px solid #58a6ff;box-shadow:0 0 10px rgba(88,166,255,0.5);margin-bottom:20px;">
+    <h1>Jenny Buys</h1>
+    <p class="contact">
+    </p>
+    <p>
+      Enthusiastic and hardworking BSc IT student with a strong foundation in programming, software, and admin operations. Demonstrates excellent communication, organizational skills, and a passion for learning. Experienced in IT support, purchasing, teaching, and customer service roles. Looking to grow within a dynamic organization where I can contribute and develop professionally.
+    </p>
+    <div class="btn-group">
+      <a href="https://github.com/JennyBuys/Virtual_CV/blob/main/Jenny%20Buys%20CV_06.2025.pdf" class="btn" download>⬇️ Download Resume (PDF)</a>
+      <a href="https://www.linkedin.com/in/jenny-buys/" target="_blank" class="btn">LinkedIn</a>
+      <a href="https://github.com/JennyBuys" target="_blank" class="btn">GitHub</a>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>North-West University</strong> — BSc Information Technology (3rd Year)</p>
+    <p><strong>Balfour Combined School</strong> — Matric Certificate (2017)</p>
+    <ul>
+      <li>Mathematics – 81%</li>
+      <li>Engineering Graphics & Design – 73%</li>
+      <li>English FAL – 71%, Afrikaans HL – 67%</li>
+      <li>Life Orientation – 79%, Life Sciences – 65%, Physical Sciences – 62%</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Programming Languages: C, C++, Java, C#</li>
+      <li>Tools & Software: Siemens NX 10, Sage 300, Netstock, Microsoft Office (Advanced)</li>
+      <li>Other: File maintenance, online teaching platforms</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <p><strong>SAERC</strong> — Admin & IT Assistant (June 2024 – Present)</p>
+    <ul>
+      <li>Provide administrative support and assist with IT-related tasks</li>
+      <li>Manage documentation, schedules, and basic system maintenance</li>
+    </ul>
+    <p><strong>GR Landmark & Voere</strong> — Junior Buyer (Dec 2022 – June 2024)</p>
+    <ul>
+      <li>Assisted in sourcing and purchasing inventory</li>
+      <li>Maintained supplier relationships and tracked stock levels</li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements & Leadership</h2>
+    <ul>
+      <li>Deputy Head Girl – Balfour Combined School (2017)</li>
+      <li>Deputy Captain – Hockey Team (2017)</li>
+      <li>Captain – National Youth Show Team (2017)</li>
+      <li>Best Mathematics & Engineering Graphics & Design Results</li>
+      <li>Performance Clothing for Academic Excellence (Grades 8–12)</li>
+      <li>Ranked 2nd in Top 10 (Grades 8–9)</li>
+    </ul>
+  </section>
+
+
+</main>
+
+<script>
+  // Highlight active nav link on scroll
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('nav a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 70; // navbar height + padding
+      const sectionHeight = section.offsetHeight;
+      if(scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if(link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
